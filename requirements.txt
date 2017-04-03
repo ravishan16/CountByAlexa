@@ -1,0 +1,3 @@
+zappa
+falsk-ask
+awscli
