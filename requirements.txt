@@ -1,3 +1,3 @@
 zappa
-falsk-ask
+flask-ask
 awscli
