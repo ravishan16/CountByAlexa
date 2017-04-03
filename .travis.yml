@@ -13,4 +13,4 @@ script: nosetests
 
 after_success:
   - pylint countbyalexa
-  - CODECLIMATE_REPO_TOKEN=40d966bf88af20646ba630439604658455029bc11cd76df2eb8457078d0efa19 codeclimate-test-reporter
+  - CODECLIMATE_REPO_TOKEN=b40ff81e1d0b47f2b1a4ba3b0d79049c0b0ab1fba3d308049c669ab95cea7358 codeclimate-test-reporter
