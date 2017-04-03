@@ -1,0 +1,7 @@
+welcome: Welcome to Count By. Would you like me to Count by 1, 2, 5 or 10. Please say the number
+
+reprompt: I didn't quite get that. Would you like me to Count by 1, 2, 5 or 10. Please say the number
+
+goodbye: See you again next time!
+
+countby : Here you go {{ numbers|join(", ") }}
