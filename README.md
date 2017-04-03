@@ -2,7 +2,8 @@
 Alexa skill using Flask Ask
 [![Build Status](https://travis-ci.org/ravishan16/CountByAlexa.svg?branch=master)](https://travis-ci.org/ravishan16/CountByAlexa)
 [![Code Climate](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/gpa.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa)
-
+[![Test Coverage](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/coverage.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa/coverage)
+[![Issue Count](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/issue_count.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa)
 
 Developed this Skill to help my Son Count
 
