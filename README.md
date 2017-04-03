@@ -1,5 +1,8 @@
 # CountByAlexa
 Alexa skill using Flask Ask
+[![Build Status](https://travis-ci.org/ravishan16/CountByAlexa.svg?branch=master)](https://travis-ci.org/ravishan16/CountByAlexa)
+[![Code Climate](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/gpa.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa)
+
 
 Developed this Skill to help my Son Count
 
