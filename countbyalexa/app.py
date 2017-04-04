@@ -36,9 +36,9 @@ def count_by():
 
 
 @ask.intent("CountIntent", convert={'count_by_inc': int})
-def count_by_inc(incr):
+def count_by_inc(count_by_inc):
     """Count By Function."""
-    numbers = countby_inc(incr)
+    numbers = countby_inc(count_by_inc)
     countby_msg = render_template('countby', numbers=numbers)
     return statement(countby_msg)
 
