@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "count_by_inc",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "CountIntent"
+    }
+  ]
+}
