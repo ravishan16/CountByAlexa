@@ -1,5 +1,0 @@
-CountIntent {count_by_inc}
-CountIntent Please count by {count_by_inc}
-CountIntent count by {count_by_inc}
-CountIntent by {count_by_inc}
-CountIntent for {count_by_inc}

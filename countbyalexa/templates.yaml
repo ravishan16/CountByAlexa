@@ -1,7 +1,7 @@
-welcome: Welcome to Count By. Would you like me to Count by 1, 2, 5 or 10. Please say the number
+welcome: Welcome {{name}} to Count By. Please say the number you would like me to Count by.
 
-reprompt: I didn't quite get that. Would you like me to Count by 1, 2, 5 or 10. Please say the number
+reprompt: I didn't quite get that. Please say the number you would like me to Count by.
 
-goodbye: See you again next time!
+goodbye: goodbye {{name}}, See you again next time!
 
-countby : Here you go {{ numbers|join(", ") }}
+countby : Please follow along, {{ numbers|join(", ") }}

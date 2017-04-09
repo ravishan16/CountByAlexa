@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Test for count by alexa."""
+"""Test for countbyalexa."""
 
 import json
 import unittest
@@ -19,7 +19,7 @@ class TestApp(unittest.TestCase):
         self.app.testing = True
 
     def tearDown(self):
-        """ Test Suite Tear down."""
+        """ Test Suite Teard down."""
         pass
 
     def test_countby_inc(self):
@@ -63,12 +63,6 @@ class TestApp(unittest.TestCase):
         """Test Count Intent for Reverse."""
         result = self.app.post('/', data=json.dumps(
                                 test_request_json.count_reverse_body))
-        assert result.status_code == 200
-
-    def test_CountError(self):
-        """Test Count Intent for Error."""
-        result = self.app.post('/', data=json.dumps(
-                                test_request_json.count_error_body))
         assert result.status_code == 200
 
     def test_HelpIntent(self):
