@@ -6,7 +6,7 @@ Count By is a simple and interactive Alexa skill aimed at making learning to ski
 [![Build Status](https://travis-ci.org/ravishan16/CountByAlexa.svg?branch=master)](https://travis-ci.org/ravishan16/CountByAlexa)[![Code Climate](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/gpa.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa)[![Test Coverage](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/coverage.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa/coverage)[![Issue Count](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/issue_count.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa)
 
 Architecture
-============
+------------
 
 Developing a Custom Skill needs understanding of how Alexa Voice Service ( Interaction Schema, Intents, utterance, custom slots ...) works and how to build a service that can expose the custom skill as an API endpoint. Alexa voice service converts the voice command to a JSON and routes the requests to our custom API. Custom API should accept requests from Alexa Voice Service/Skill and send back response complying to the JSON Contract.
 
@@ -15,24 +15,21 @@ Developing a Custom Skill needs understanding of how Alexa Voice Service ( Inter
 
 ![Architecture ](docs/arch_diagram.png)
 
-Flask-Ask
-=========
+### Flask-Ask
 
 Flask-Ask is a plugin for flask, a popular Micro-services framework. Flask-Ask makes building the custom skill API a breeze, it abstracts all the heavy lifting and lets you focus on the core code. Flask-Ask validates requests signature (You can turn this off for Testing), maps requests to view functions, construct response complying with the JSON Interface contract and more.
 
 -	[Flask-Ask Reference](https://alexatutorial.com/flask-ask/)
 -	[Flask-Ask samples](https://github.com/johnwheeler/flask-ask/tree/master/samples)
 
-Configuring Skill
-=================
+### Configuring Skill
 
 Configuring Skill is done in [Amazon Dev Portal](https://developer.amazon.com/). Here you add Skill Information, Interaction Model (Intent Schema, Custom Slots, Sample utterances), Configuration (Mapping the skill to the custom API). Building the Interaction model is the most critical part of building a custom skill.
 
 -	[Big Nerd Ranch Tutorial](https://developer.amazon.com/alexa-skills-kit/big-nerd-ranch)
 -	[Registering Skill in Developer Portal](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/registering-and-managing-alexa-skills-in-the-developer-portal) : This step involves configuring skill providing intent schema, sample utterance, custom slots.. and linking to the Flask-Ask API endpoint.
 
-Deploying Service to AWS
-========================
+### Deploying Service to AWS
 
 Deploying a flask-ask skill to AWS can be done is so many different ways. IMHO easiest way is to use `ZAPPA` and deploy the app in a server-less way to AWS Lambda and AWS API Gateway.
 
@@ -43,8 +40,8 @@ Clone the repo, cd to the app folder
 
 ```shell
 
-$ git clone git@github.com:ravishan16/CountByAlexa.git
-$ cd CountByAlexa/countbyalexa/
+git clone git@github.com:ravishan16/CountByAlexa.git
+cd CountByAlexa/countbyalexa/
 
 ```
 
@@ -52,7 +49,7 @@ Run app.py launches flask-ask app on http://127.0.0.1:5000/
 
 ```python
 
-$ python app.py
+python app.py
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 145-691-207
@@ -104,8 +101,8 @@ Deployment of skill to AWS involves two steps:
 3.	Configuring Zappa and runnning deployment
 
 ```shell
-$ pip install awscli
-$ aws configure
+pip install awscli
+aws configure
 AWS Access Key ID [None]: XXXX
 AWS Secret Access Key [None]: XXXX
 Default region name [None]: us-east-1
@@ -123,13 +120,13 @@ zappa deploy dev
 ### Checking Logs
 
 ```shell
-$ zappa tail dev
+zappa tail dev
 ```
 
 ### Pushing Update To Code
 
 ```shell
-$ zappa update dev
+zappa update dev
 ```
 
 Configuration
@@ -142,3 +139,8 @@ MY_USERID & MY_NAME are added to personalize the experience only for the alexa u
 -	`LOG_LEVEL`: LOG_LEVEL is set to default `INFO` this can be overridden by adding the env variable.
 -	`MY_USERID`: Env variable set to my `Alexa User Id` that comes as part of the request. This is optional.
 -	`MY_NAME`: Env variable set to any text\name that will be added as part of the launch intent/ stop intent greeting
+
+License
+-------
+
+[MIT](https://github.com/atom/atom/blob/master/LICENSE.md)
