@@ -10,10 +10,10 @@ Architecture
 
 Developing a Custom Skill needs understanding of how Alexa Voice Service ( Interaction Schema, Intents, utterance, custom slots ...) works and how to build a service that can expose the custom skill as an API endpoint. Alexa voice service converts the voice command to a JSON and routes the requests to our custom API. Custom API should accept requests from Alexa Voice Service/Skill and send back response complying to the JSON Contract.
 
--	[Amazon Dev Blog](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
--	[Deploying a Sample Custom Skill as a Web Service](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/deploying-a-sample-skill-as-a-web-service)
-
 ![Architecture ](docs/arch_diagram.png)
+
+-	[Amazon Developer Blog](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
+-	[Deploying a Sample Custom Skill as a Web Service](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/deploying-a-sample-skill-as-a-web-service)
 
 ### Flask-Ask
 
@@ -24,7 +24,7 @@ Flask-Ask is a plugin for flask, a popular Micro-services framework. Flask-Ask m
 
 ### Configuring Skill
 
-Configuring Skill is done in [Amazon Dev Portal](https://developer.amazon.com/). Here you add Skill Information, Interaction Model (Intent Schema, Custom Slots, Sample utterances), Configuration (Mapping the skill to the custom API). Building the Interaction model is the most critical part of building a custom skill.
+Configuring Skill is done in [Amazon Developer Portal](https://developer.amazon.com/). Here you add Skill Information, Interaction Model (Intent Schema, Custom Slots, Sample utterances), Configuration (Mapping the skill to the custom API). Building the Interaction model is the most critical part of building a custom skill.
 
 -	[Big Nerd Ranch Tutorial](https://developer.amazon.com/alexa-skills-kit/big-nerd-ranch)
 -	[Registering Skill in Developer Portal](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/registering-and-managing-alexa-skills-in-the-developer-portal) : This step involves configuring skill providing intent schema, sample utterance, custom slots.. and linking to the Flask-Ask API endpoint.
@@ -32,6 +32,16 @@ Configuring Skill is done in [Amazon Dev Portal](https://developer.amazon.com/).
 ### Deploying Service to AWS
 
 Deploying a flask-ask skill to AWS can be done is so many different ways. IMHO easiest way is to use `ZAPPA` and deploy the app in a server-less way to AWS Lambda and AWS API Gateway.
+
+-	[Deploying Server Less Micro-services using Zappa](https://gun.io/blog/serverless-microservices-with-zappa-and-flask/)
+-	[ZappaGit](https://github.com/Miserlou/Zappa)
+
+### Development Practice
+
+1.	Python Version - 2.7
+2.	Project Structure - Standard python project structure. [speech_assets](speech_assets/) folder has interaction model assets. Check out [Structuring Guide](http://python-guide-pt-br.readthedocs.io/en/latest/writing/structure/)
+3.	Nose tests for Unit Testing - [tests](tests/) folder has the test cases. Understanding JSON interface is critical to writing unit tests for flask-ask app.
+4.	Travis CI for build and Code Climate for static code analysis and publishing Test Coverage reports
 
 Testing Flask-Ask App in Local
 ------------------------------
@@ -41,7 +51,9 @@ Clone the repo, cd to the app folder
 ```shell
 
 git clone git@github.com:ravishan16/CountByAlexa.git
-cd CountByAlexa/countbyalexa/
+cd CountByAlexa
+pip install -r requirements.txt
+
 
 ```
 
@@ -49,7 +61,7 @@ Run app.py launches flask-ask app on http://127.0.0.1:5000/
 
 ```python
 
-python app.py
+python countbyalexa/app.py
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 145-691-207
@@ -85,14 +97,6 @@ $ curl -X POST \
     "version": "1.0"
 }'
 ```
-
-Deployment
-----------
-
-Deployment of skill to AWS involves two steps:
-
--	`Flask-Ask Deployment`: Deploying the Flask-Ask App. Which involves deploying AWS Lambda Function and AWS API Gateway. Zappa makes this step a breeze. It does all the mundane task.
--	`Zappa` [Deploying Server Less Micro-services using](https://gun.io/blog/serverless-microservices-with-zappa-and-flask/) -[Blog](https://developer.amazon.com/blogs/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa) -[ZappaGit](https://github.com/Miserlou/Zappa)
 
 ### Flask-Ask deployment in AWS
 
