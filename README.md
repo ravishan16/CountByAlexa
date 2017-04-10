@@ -33,6 +33,16 @@ Configuring Skill is done in [Amazon Dev Portal](https://developer.amazon.com/).
 
 Deploying a flask-ask skill to AWS can be done is so many different ways. IMHO easiest way is to use `ZAPPA` and deploy the app in a server-less way to AWS Lambda and AWS API Gateway.
 
+-	[Deploying Server Less Micro-services using Zappa](https://gun.io/blog/serverless-microservices-with-zappa-and-flask/)
+-	[ZappaGit](https://github.com/Miserlou/Zappa)
+
+### Dev Practice
+
+1.	Python Version - 2.7
+2.	Project Sructure - Standard python project structure, [speech_assets](speech_assets/) folder has interaction model assets [Structuring Guide](http://python-guide-pt-br.readthedocs.io/en/latest/writing/structure/)
+3.	Nose tests for Unit Testing - [tests](tests/) folder has the test cases. Understanding JSON interface is critical to writing unit tests for flask-ask app.
+4.	Travis CI for build and Code Climate for static code analysis and publishing Test Coverage reports
+
 Testing Flask-Ask App in Local
 ------------------------------
 
@@ -85,14 +95,6 @@ $ curl -X POST \
     "version": "1.0"
 }'
 ```
-
-Deployment
-----------
-
-Deployment of skill to AWS involves two steps:
-
--	`Flask-Ask Deployment`: Deploying the Flask-Ask App. Which involves deploying AWS Lambda Function and AWS API Gateway. Zappa makes this step a breeze. It does all the mundane task.
--	`Zappa` [Deploying Server Less Micro-services using](https://gun.io/blog/serverless-microservices-with-zappa-and-flask/) -[Blog](https://developer.amazon.com/blogs/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa) -[ZappaGit](https://github.com/Miserlou/Zappa)
 
 ### Flask-Ask deployment in AWS
 
