@@ -13,6 +13,8 @@ Developing a Custom Skill needs understanding of how Alexa Voice Service ( Inter
 -	[Amazon Dev Blog](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
 -	[Deploying a Sample Custom Skill as a Web Service](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/deploying-a-sample-skill-as-a-web-service)
 
+![Architecture ](docs/arch_diagram.png)
+
 Flask-Ask
 =========
 
