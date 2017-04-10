@@ -8,13 +8,13 @@ engines:
   fixme:
     enabled: true
   markdownlint:
-    enabled: true
+    enabled: false
   pep8:
     enabled: true
   radon:
     enabled: true
     config:
-      python_version: 2    
+      python_version: 2
 ratings:
   paths:
   - "**.inc"

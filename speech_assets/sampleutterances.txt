@@ -1,0 +1,48 @@
+CountIntent {count_by_inc}
+CountIntent Please count by {count_by_inc}
+CountIntent count by {count_by_inc}
+CountIntent by {count_by_inc}
+CountIntent for {count_by_inc}
+CountIntent number {count_by_inc}
+CountIntent {count_by_inc} in {count_order}
+CountIntent Please count by {count_by_inc} in {count_order}
+CountIntent count by {count_by_inc} in {count_order}
+CountIntent by {count_by_inc} in {count_order}
+CountIntent for {count_by_inc} in {count_order}
+CountIntent number {count_by_inc} in {count_order}
+CountIntent {count_order} {count_by_inc}
+CountIntent Please count by {count_by_inc} {count_order}
+CountIntent count by {count_by_inc} {count_order}
+CountIntent by {count_by_inc} {count_order}
+CountIntent for {count_by_inc} {count_order}
+CountIntent number {count_by_inc} {count_order}
+CountIntent {count_by_inc} and {count_order}
+CountIntent Please count by {count_by_inc} and {count_order}
+CountIntent count by {count_by_inc} and {count_order}
+CountIntent by {count_by_inc} and {count_order}
+CountIntent for {count_by_inc} and {count_order}
+CountIntent number {count_by_inc} and {count_order}
+CountIntent {count_by_inc} to {count_limit}
+CountIntent Please count by {count_by_inc} to {count_limit}
+CountIntent count by {count_by_inc} to {count_limit}
+CountIntent by {count_by_inc} to {count_limit}
+CountIntent for {count_by_inc} to {count_limit}
+CountIntent number {count_by_inc} to {count_limit}
+CountIntent {count_by_inc} in {count_order} to {count_limit}
+CountIntent Please count by {count_by_inc} in {count_order} to {count_limit}
+CountIntent count by {count_by_inc} in {count_order} to {count_limit}
+CountIntent by {count_by_inc} in {count_order} to {count_limit}
+CountIntent for {count_by_inc} in {count_order} to {count_limit}
+CountIntent number {count_by_inc} in {count_order} to {count_limit}
+CountIntent {count_order} {count_by_inc} to {count_limit}
+CountIntent Please count by {count_by_inc} {count_order} to {count_limit}
+CountIntent count by {count_by_inc} {count_order} to {count_limit}
+CountIntent by {count_by_inc} {count_order} to {count_limit}
+CountIntent for {count_by_inc} {count_order} to {count_limit}
+CountIntent number {count_by_inc} {count_order} to {count_limit}
+CountIntent {count_by_inc} and {count_order} to {count_limit}
+CountIntent Please count by {count_by_inc} and {count_order} to {count_limit}
+CountIntent count by {count_by_inc} and {count_order} to {count_limit}
+CountIntent by {count_by_inc} and {count_order} to {count_limit}
+CountIntent for {count_by_inc} and {count_order} to {count_limit}
+CountIntent number {count_by_inc} and {count_order} to {count_limit}
