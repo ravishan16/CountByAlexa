@@ -16,7 +16,7 @@ log = logging.getLogger('flask_ask').setLevel(log_level)
 
 NAME_KEY = 'USER_NAME'
 DEFAULT_INCR = 1
-DEFAULT_LIMIT = os.getenv("DEFAULT_LIMIT", 25)
+DEFAULT_LIMIT = os.getenv("DEFAULT_LIMIT", 20)
 MAX_LIMIT = 10000
 
 
