@@ -1,7 +1,7 @@
-CountByAlexa
-============
+Skip Count Alexa Skill
+======================
 
-Count By is a simple and interactive Alexa skill aimed at making learning to skip count fun. Skill helps reinforce the concept of counting in increments.
+Skip Count is a simple and interactive Alexa skill aimed at making learning to skip count fun. Skill helps reinforce the concept of counting in increments.
 
 [![Build Status](https://travis-ci.org/ravishan16/CountByAlexa.svg?branch=master)](https://travis-ci.org/ravishan16/CountByAlexa)[![Code Climate](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/gpa.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa)[![Test Coverage](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/coverage.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa/coverage)[![Issue Count](https://codeclimate.com/github/ravishan16/CountByAlexa/badges/issue_count.svg)](https://codeclimate.com/github/ravishan16/CountByAlexa)
 
@@ -27,7 +27,7 @@ Flask-Ask is a plugin for flask, a popular Micro-services framework. Flask-Ask m
 Configuring Skill is done in [Amazon Developer Portal](https://developer.amazon.com/). Here you add Skill Information, Interaction Model (Intent Schema, Custom Slots, Sample utterances), Configuration (Mapping the skill to the custom API). Building the Interaction model is the most critical part of building a custom skill.
 
 -	[Big Nerd Ranch Tutorial](https://developer.amazon.com/alexa-skills-kit/big-nerd-ranch)
--	[Registering Skill in Developer Portal](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/registering-and-managing-alexa-skills-in-the-developer-portal) : This step involves configuring skill providing intent schema, sample utterance, custom slots.. and linking to the Flask-Ask API endpoint.
+-	[Registering Skill in Developer Portal](https://developer.amazon.com/alexa) : This step involves configuring skill providing intent schema, sample utterance, custom slots.. and linking to the Flask-Ask API endpoint.
 
 ### Deploying Service to AWS
 
