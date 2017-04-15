@@ -1,6 +1,10 @@
 {
     "dev": {
-        "app_function": "countbyalexa.app.app", 
+        "app_function": "countbyalexa.app.app",
+        "s3_bucket": "s3-ravi"
+    },
+    "production": {
+        "app_function": "countbyalexa.app.app",
         "s3_bucket": "s3-ravi"
     }
 }
