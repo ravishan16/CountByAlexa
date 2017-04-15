@@ -1,48 +1,288 @@
 CountIntent {count_by_inc}
-CountIntent Please count by {count_by_inc}
-CountIntent count by {count_by_inc}
 CountIntent by {count_by_inc}
 CountIntent for {count_by_inc}
 CountIntent number {count_by_inc}
-CountIntent {count_by_inc} in {count_order}
-CountIntent Please count by {count_by_inc} in {count_order}
-CountIntent count by {count_by_inc} in {count_order}
-CountIntent by {count_by_inc} in {count_order}
-CountIntent for {count_by_inc} in {count_order}
-CountIntent number {count_by_inc} in {count_order}
-CountIntent {count_order} {count_by_inc}
-CountIntent Please count by {count_by_inc} {count_order}
-CountIntent count by {count_by_inc} {count_order}
-CountIntent by {count_by_inc} {count_order}
-CountIntent for {count_by_inc} {count_order}
-CountIntent number {count_by_inc} {count_order}
-CountIntent {count_by_inc} and {count_order}
-CountIntent Please count by {count_by_inc} and {count_order}
-CountIntent count by {count_by_inc} and {count_order}
-CountIntent by {count_by_inc} and {count_order}
-CountIntent for {count_by_inc} and {count_order}
-CountIntent number {count_by_inc} and {count_order}
+
+CountIntent to {count_limit}
+CountIntent upto {count_limit}
+CountIntent limit {count_limit}
+
+CountIntent {count_order}
+CountIntent in {count_order}
+CountIntent order {count_order}
+
+
 CountIntent {count_by_inc} to {count_limit}
-CountIntent Please count by {count_by_inc} to {count_limit}
-CountIntent count by {count_by_inc} to {count_limit}
 CountIntent by {count_by_inc} to {count_limit}
 CountIntent for {count_by_inc} to {count_limit}
 CountIntent number {count_by_inc} to {count_limit}
-CountIntent {count_by_inc} in {count_order} to {count_limit}
-CountIntent Please count by {count_by_inc} in {count_order} to {count_limit}
-CountIntent count by {count_by_inc} in {count_order} to {count_limit}
-CountIntent by {count_by_inc} in {count_order} to {count_limit}
-CountIntent for {count_by_inc} in {count_order} to {count_limit}
-CountIntent number {count_by_inc} in {count_order} to {count_limit}
-CountIntent {count_order} {count_by_inc} to {count_limit}
-CountIntent Please count by {count_by_inc} {count_order} to {count_limit}
-CountIntent count by {count_by_inc} {count_order} to {count_limit}
+
+CountIntent {count_by_inc} upto {count_limit}
+CountIntent by {count_by_inc} upto {count_limit}
+CountIntent for {count_by_inc} upto {count_limit}
+CountIntent number {count_by_inc} upto {count_limit}
+
+CountIntent {count_by_inc} limit {count_limit}
+CountIntent by {count_by_inc} limit {count_limit}
+CountIntent for {count_by_inc} limit {count_limit}
+CountIntent number {count_by_inc} limit {count_limit}
+
+CountIntent {count_by_inc} {count_order}
+CountIntent by {count_by_inc} {count_order}
+CountIntent for {count_by_inc} {count_order}
+CountIntent number {count_by_inc} to {count_order}
+
+CountIntent {count_by_inc} in {count_order}
+CountIntent by {count_by_inc} in {count_order}
+CountIntent for {count_by_inc} in {count_order}
+CountIntent number {count_by_inc} in {count_order}
+
+CountIntent {count_by_inc} order {count_order}
+CountIntent by {count_by_inc} order {count_order}
+CountIntent for {count_by_inc} order {count_order}
+CountIntent number {count_by_inc} order {count_order}
+
+
+CountIntent {count_by_inc} to {count_limit} {count_order}
+CountIntent by {count_by_inc} to {count_limit} {count_order}
+CountIntent for {count_by_inc} to {count_limit} {count_order}
+CountIntent number {count_by_inc} to {count_limit} {count_order}
+CountIntent {count_by_inc} upto {count_limit} {count_order}
+CountIntent by {count_by_inc} upto {count_limit} {count_order}
+CountIntent for {count_by_inc} upto {count_limit} {count_order}
+CountIntent number {count_by_inc} upto {count_limit} {count_order}
+CountIntent {count_by_inc} limit {count_limit} {count_order}
+CountIntent by {count_by_inc} limit {count_limit} {count_order}
+CountIntent for {count_by_inc} limit {count_limit} {count_order}
+CountIntent number {count_by_inc} limit {count_limit} {count_order}
+
+CountIntent {count_by_inc} to {count_limit} order {count_order}
+CountIntent by {count_by_inc} to {count_limit} order {count_order}
+CountIntent for {count_by_inc} to {count_limit} order {count_order}
+CountIntent number {count_by_inc} to {count_limit} order {count_order}
+CountIntent {count_by_inc} upto {count_limit} order {count_order}
+CountIntent by {count_by_inc} upto {count_limit} order {count_order}
+CountIntent for {count_by_inc} upto {count_limit} order {count_order}
+CountIntent number {count_by_inc} upto {count_limit} order {count_order}
+CountIntent {count_by_inc} limit {count_limit} order {count_order}
+CountIntent by {count_by_inc} limit {count_limit} order {count_order}
+CountIntent for {count_by_inc} limit {count_limit} order {count_order}
+CountIntent number {count_by_inc} limit {count_limit} order {count_order}
+
+CountIntent {count_by_inc} to {count_limit} in {count_order}
+CountIntent by {count_by_inc} to {count_limit} in {count_order}
+CountIntent for {count_by_inc} to {count_limit} in {count_order}
+CountIntent number {count_by_inc} to {count_limit} in {count_order}
+CountIntent {count_by_inc} upto {count_limit} in {count_order}
+CountIntent by {count_by_inc} upto {count_limit} in {count_order}
+CountIntent for {count_by_inc} upto {count_limit} in {count_order}
+CountIntent number {count_by_inc} upto {count_limit} in {count_order}
+CountIntent {count_by_inc} limit {count_limit} in {count_order}
+CountIntent by {count_by_inc} limit {count_limit} order {count_order}
+CountIntent for {count_by_inc} limit {count_limit} in {count_order}
+CountIntent number {count_by_inc} limit {count_limit} in {count_order}
+
+CountIntent {count_by_inc} {count_order} to {count_limit}
 CountIntent by {count_by_inc} {count_order} to {count_limit}
 CountIntent for {count_by_inc} {count_order} to {count_limit}
 CountIntent number {count_by_inc} {count_order} to {count_limit}
-CountIntent {count_by_inc} and {count_order} to {count_limit}
-CountIntent Please count by {count_by_inc} and {count_order} to {count_limit}
-CountIntent count by {count_by_inc} and {count_order} to {count_limit}
-CountIntent by {count_by_inc} and {count_order} to {count_limit}
-CountIntent for {count_by_inc} and {count_order} to {count_limit}
-CountIntent number {count_by_inc} and {count_order} to {count_limit}
+CountIntent {count_by_inc} {count_order} upto {count_limit}
+CountIntent by {count_by_inc} {count_order} upto {count_limit}
+CountIntent for {count_by_inc} {count_order} upto {count_limit}
+CountIntent number {count_by_inc} {count_order} upto {count_limit}
+CountIntent {count_by_inc} {count_order} limit {count_limit}
+CountIntent by {count_by_inc} {count_order} limit {count_limit}
+CountIntent for {count_by_inc} {count_order} limit {count_limit}
+CountIntent number {count_by_inc} {count_order} limit {count_limit}
+
+CountIntent {count_by_inc} order {count_order} to {count_limit}
+CountIntent by {count_by_inc} order {count_order} to {count_limit}
+CountIntent for {count_by_inc} order {count_order} to {count_limit}
+CountIntent number {count_by_inc} order {count_order} to {count_limit}
+CountIntent {count_by_inc} order {count_order} upto {count_limit}
+CountIntent by {count_by_inc} order {count_order} upto {count_limit}
+CountIntent for {count_by_inc} order {count_order} upto {count_limit}
+CountIntent number {count_by_inc} order {count_order} upto {count_limit}
+CountIntent {count_by_inc} order {count_order} limit {count_limit}
+CountIntent by {count_by_inc} order {count_order} limit {count_limit}
+CountIntent for {count_by_inc} order {count_order} limit {count_limit}
+CountIntent number {count_by_inc} order {count_order} limit {count_limit}
+
+CountIntent {count_by_inc} in {count_order} to {count_limit}
+CountIntent by {count_by_inc} in {count_order} to {count_limit}
+CountIntent for {count_by_inc} in {count_order} to {count_limit}
+CountIntent number {count_by_inc} in {count_order} to {count_limit}
+CountIntent {count_by_inc} in {count_order} upto {count_limit}
+CountIntent by {count_by_inc} in {count_order} upto {count_limit}
+CountIntent for {count_by_inc} in {count_order} upto {count_limit}
+CountIntent number {count_by_inc} in {count_order} upto {count_limit}
+CountIntent {count_by_inc} in {count_order} limit {count_limit}
+CountIntent by {count_by_inc} order {count_order} limit {count_limit}
+CountIntent for {count_by_inc} in {count_order} limit {count_limit}
+CountIntent number {count_by_inc} in {count_order} limit {count_limit}
+
+CountIntent to {count_limit} by {count_by_inc}
+CountIntent upto {count_limit} by {count_by_inc}
+CountIntent limit {count_limit} by {count_by_inc}
+
+CountIntent to {count_limit} for {count_by_inc}
+CountIntent upto {count_limit} for {count_by_inc}
+CountIntent limit {count_limit} for {count_by_inc}
+
+CountIntent to {count_limit} number {count_by_inc}
+CountIntent upto {count_limit} number {count_by_inc}
+CountIntent limit {count_limit} number {count_by_inc}
+
+CountIntent to {count_limit} {count_order}
+CountIntent upto {count_limit} {count_order}
+CountIntent limit {count_limit} {count_order}
+
+CountIntent to {count_limit} in {count_order}
+CountIntent upto {count_limit} in {count_order}
+CountIntent limit {count_limit} in {count_order}
+
+CountIntent to {count_limit} order {count_order}
+CountIntent upto {count_limit} order {count_order}
+CountIntent limit {count_limit} order {count_order}
+
+
+CountIntent to {count_limit} by {count_by_inc} {count_order}
+CountIntent upto {count_limit} by {count_by_inc} {count_order}
+CountIntent limit {count_limit} by {count_by_inc} {count_order}
+CountIntent to {count_limit} for {count_by_inc} {count_order}
+CountIntent upto {count_limit} for {count_by_inc} {count_order}
+CountIntent limit {count_limit} for {count_by_inc} {count_order}
+CountIntent to {count_limit} number {count_by_inc} {count_order}
+CountIntent upto {count_limit} number {count_by_inc} {count_order}
+CountIntent limit {count_limit} number {count_by_inc} {count_order}
+
+CountIntent to {count_limit} by {count_by_inc} in {count_order}
+CountIntent upto {count_limit} by {count_by_inc} in {count_order}
+CountIntent limit {count_limit} by {count_by_inc} in {count_order}
+CountIntent to {count_limit} for {count_by_inc} in {count_order}
+CountIntent upto {count_limit} for {count_by_inc} in {count_order}
+CountIntent limit {count_limit} for {count_by_inc} in {count_order}
+CountIntent to {count_limit} number {count_by_inc} in {count_order}
+CountIntent upto {count_limit} number {count_by_inc} in {count_order}
+CountIntent limit {count_limit} number {count_by_inc} in {count_order}
+
+CountIntent to {count_limit} by {count_by_inc} order {count_order}
+CountIntent upto {count_limit} by {count_by_inc} order {count_order}
+CountIntent limit {count_limit} by {count_by_inc} order {count_order}
+CountIntent to {count_limit} for {count_by_inc} order {count_order}
+CountIntent upto {count_limit} for {count_by_inc} order {count_order}
+CountIntent limit {count_limit} for {count_by_inc} order {count_order}
+CountIntent to {count_limit} number {count_by_inc} order {count_order}
+CountIntent upto {count_limit} number {count_by_inc} order {count_order}
+CountIntent limit {count_limit} number {count_by_inc} order {count_order}
+
+CountIntent to {count_limit} {count_order} by {count_by_inc}
+CountIntent upto {count_limit} {count_order} by {count_by_inc}
+CountIntent limit {count_limit} {count_order} by {count_by_inc}
+CountIntent to {count_limit} in {count_order} by {count_by_inc}
+CountIntent upto {count_limit} in {count_order} by {count_by_inc}
+CountIntent limit {count_limit} in {count_order} by {count_by_inc}
+CountIntent to {count_limit} order {count_order} by {count_by_inc}
+CountIntent upto {count_limit} order {count_order} by {count_by_inc}
+CountIntent limit {count_limit} order {count_order} by {count_by_inc}
+
+CountIntent to {count_limit} {count_order} for {count_by_inc}
+CountIntent upto {count_limit} {count_order} for {count_by_inc}
+CountIntent limit {count_limit} {count_order} for {count_by_inc}
+CountIntent to {count_limit} in {count_order} for {count_by_inc}
+CountIntent upto {count_limit} in {count_order} for {count_by_inc}
+CountIntent limit {count_limit} in {count_order} for {count_by_inc}
+CountIntent to {count_limit} order {count_order} for {count_by_inc}
+CountIntent upto {count_limit} order {count_order} for {count_by_inc}
+CountIntent limit {count_limit} order {count_order} for {count_by_inc}
+
+CountIntent to {count_limit} {count_order} number {count_by_inc}
+CountIntent upto {count_limit} {count_order} number {count_by_inc}
+CountIntent limit {count_limit} {count_order} number {count_by_inc}
+CountIntent to {count_limit} in {count_order} number {count_by_inc}
+CountIntent upto {count_limit} in {count_order} number {count_by_inc}
+CountIntent limit {count_limit} in {count_order} number {count_by_inc}
+CountIntent to {count_limit} order {count_order} number {count_by_inc}
+CountIntent upto {count_limit} order {count_order} number {count_by_inc}
+CountIntent limit {count_limit} order {count_order} number {count_by_inc}
+
+CountIntent {count_order} by {count_by_inc}
+CountIntent in {count_order} by {count_by_inc}
+CountIntent order {count_order} by {count_by_inc}
+CountIntent {count_order} for {count_by_inc}
+CountIntent in {count_order} for {count_by_inc}
+CountIntent order {count_order} for {count_by_inc}
+CountIntent {count_order} number {count_by_inc}
+CountIntent in {count_order} number {count_by_inc}
+CountIntent order {count_order} number {count_by_inc}
+
+CountIntent {count_order} to {count_limit}
+CountIntent in {count_order} to {count_limit}
+CountIntent order {count_order} to {count_limit}
+CountIntent {count_order} upto {count_limit}
+CountIntent in {count_order} upto {count_limit}
+CountIntent order {count_order} upto {count_limit}
+CountIntent {count_order} limit {count_limit}
+CountIntent in {count_order} limit {count_limit}
+CountIntent order {count_order} limit {count_limit}
+
+
+CountIntent {count_order} by {count_by_inc} to {count_limit}
+CountIntent in {count_order} by {count_by_inc} to {count_limit}
+CountIntent order {count_order} by {count_by_inc} to {count_limit}
+CountIntent {count_order} for {count_by_inc} to {count_limit}
+CountIntent in {count_order} for {count_by_inc} to {count_limit}
+CountIntent order {count_order} for {count_by_inc} to {count_limit}
+CountIntent {count_order} number {count_by_inc} to {count_limit}
+CountIntent in {count_order} number {count_by_inc} to {count_limit}
+CountIntent order {count_order} number {count_by_inc} to {count_limit}
+
+CountIntent {count_order} by {count_by_inc} upto {count_limit}
+CountIntent in {count_order} by {count_by_inc} upto {count_limit}
+CountIntent order {count_order} by {count_by_inc} upto {count_limit}
+CountIntent {count_order} for {count_by_inc} upto {count_limit}
+CountIntent in {count_order} for {count_by_inc} upto {count_limit}
+CountIntent order {count_order} for {count_by_inc} upto {count_limit}
+CountIntent {count_order} number {count_by_inc} upto {count_limit}
+CountIntent in {count_order} number {count_by_inc} upto {count_limit}
+CountIntent order {count_order} number {count_by_inc} upto {count_limit}
+
+CountIntent {count_order} by {count_by_inc} limit {count_limit}
+CountIntent in {count_order} by {count_by_inc} limit {count_limit}
+CountIntent order {count_order} by {count_by_inc} limit {count_limit}
+CountIntent {count_order} for {count_by_inc} limit {count_limit}
+CountIntent in {count_order} for {count_by_inc} limit {count_limit}
+CountIntent order {count_order} for {count_by_inc} limit {count_limit}
+CountIntent {count_order} number {count_by_inc} limit {count_limit}
+CountIntent in {count_order} number {count_by_inc} limit {count_limit}
+CountIntent order {count_order} number {count_by_inc} limit {count_limit}
+
+CountIntent {count_order} to {count_limit} by {count_by_inc}
+CountIntent in {count_order} to {count_limit} by {count_by_inc}
+CountIntent order {count_order} to {count_limit} by {count_by_inc}
+CountIntent {count_order} upto {count_limit} by {count_by_inc}
+CountIntent in {count_order} upto {count_limit} by {count_by_inc}
+CountIntent order {count_order} upto {count_limit} by {count_by_inc}
+CountIntent {count_order} limit {count_limit} by {count_by_inc}
+CountIntent in {count_order} limit {count_limit} by {count_by_inc}
+CountIntent order {count_order} limit {count_limit} by {count_by_inc}
+
+CountIntent {count_order} to {count_limit} for {count_by_inc}
+CountIntent in {count_order} to {count_limit} for {count_by_inc}
+CountIntent order {count_order} to {count_limit} for {count_by_inc}
+CountIntent {count_order} upto {count_limit} for {count_by_inc}
+CountIntent in {count_order} upto {count_limit} for {count_by_inc}
+CountIntent order {count_order} upto {count_limit} for {count_by_inc}
+CountIntent {count_order} limit {count_limit} for {count_by_inc}
+CountIntent in {count_order} limit {count_limit} for {count_by_inc}
+CountIntent order {count_order} limit {count_limit} for {count_by_inc}
+
+CountIntent {count_order} to {count_limit} number {count_by_inc}
+CountIntent in {count_order} to {count_limit} number {count_by_inc}
+CountIntent order {count_order} to {count_limit} number {count_by_inc}
+CountIntent {count_order} upto {count_limit} number {count_by_inc}
+CountIntent in {count_order} upto {count_limit} number {count_by_inc}
+CountIntent order {count_order} upto {count_limit} number {count_by_inc}
+CountIntent {count_order} limit {count_limit} number {count_by_inc}
+CountIntent in {count_order} limit {count_limit} number {count_by_inc}
+CountIntent order {count_order} limit {count_limit} number {count_by_inc}

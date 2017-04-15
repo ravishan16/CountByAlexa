@@ -71,6 +71,12 @@ class TestApp(unittest.TestCase):
                                 test_request_json.count_error_body))
         assert result.status_code == 200
 
+    def test_CountError2(self):
+        """Test Count Intent for Error."""
+        result = self.app.post('/', data=json.dumps(
+                                test_request_json.count_error_body2))
+        assert result.status_code == 200
+
     def test_HelpIntent(self):
         """Test Help Intent."""
         result = self.app.post('/', data=json.dumps(

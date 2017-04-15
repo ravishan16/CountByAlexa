@@ -16,7 +16,7 @@ log = logging.getLogger('flask_ask').setLevel(log_level)
 
 NAME_KEY = 'USER_NAME'
 DEFAULT_INCR = 1
-DEFAULT_LIMIT = 10
+DEFAULT_LIMIT = os.getenv("DEFAULT_LIMIT", 20)
 MAX_LIMIT = 10000
 
 
@@ -73,6 +73,8 @@ def count_by_inc(count_by_inc, count_order, count_limit):
     if count_order in ['reverse', 'reversed', 'backwards', 'backwords',
                        'back', 'descending', 'down', 'desc']:
         reversed = True
+    if count_by_inc is None:
+        count_by_inc = DEFAULT_INCR
     if count_limit is None:
         count_limit = DEFAULT_LIMIT*count_by_inc
     numbers = countby_inc(count_by_inc, count_limit, reversed)

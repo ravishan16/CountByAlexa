@@ -1,6 +1,6 @@
-welcome: Welcome {{name}} to Count By. Please say the number you would like me to Count by.
+welcome: Welcome {{name}} to Skip Count. Please say the number you would like me to Skip Count.
 
-reprompt: I didn't quite get that. Please say the number you would like me to Count by.
+reprompt: I didn't quite get that. Please say the number you would like me to Skip Count.
 
 goodbye: goodbye {{name}}, See you again next time!
 

@@ -300,3 +300,35 @@ count_error_body = {
     },
     "version": "1.0"
 }
+
+count_error_body2 = {
+    "request": {
+        "intent": {
+            "name": "CountIntent",
+            "slots": {
+                "count_by_inc": {
+                    "name": "count_by_inc"
+                },
+                "count_order": {
+                    "name": "count_order",
+                    "value": "reverse"
+                },
+                "count_limit": {
+                    "name": "count_limit"
+                }
+            }
+        },
+        "type": "IntentRequest"
+    },
+    "session": {
+        "application": {
+            "applicationId": "amzn1.ask.skill"
+        },
+        "new": False,
+        "sessionId": "amzn1.echo-api.session",
+        "user": {
+            "userId": "amzn1.ask.account"
+        }
+    },
+    "version": "1.0"
+}
