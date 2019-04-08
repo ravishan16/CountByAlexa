@@ -148,3 +148,7 @@ License
 -------
 
 [MIT](https://github.com/atom/atom/blob/master/LICENSE.md)
+
+
+-- Ravishankar Sivsasubramaniam
+
