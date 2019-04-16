@@ -10,7 +10,7 @@ Architecture
 
 Developing a Custom Skill needs understanding of how Alexa Voice Service ( Interaction Schema, Intents, utterance, custom slots ...) works and how to build a service that can expose the custom skill as an API endpoint. Alexa voice service converts the voice command to a JSON and routes the requests to our custom API. Custom API should accept requests from Alexa Voice Service/Skill and send back response complying to the JSON Contract.
 
-![Architecture ](docs/arch_diagram.png)
+![Architecture - Ravishankar Sivsubramaniam](docs/arch_diagram.png)
 
 -	[Amazon Developer Blog](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
 -	[Deploying a Sample Custom Skill as a Web Service](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/deploying-a-sample-skill-as-a-web-service)
